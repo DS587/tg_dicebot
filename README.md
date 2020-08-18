@@ -1,4 +1,4 @@
-# tg_dicebot
+# Dice! on Telegram
 
 在 Telegram 上快速配置你的骰子机器人。基于 `Python > 3.6` 。
 
