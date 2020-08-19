@@ -7,7 +7,7 @@ magenta='\e[95m'
 cyan='\e[96m'
 none='\e[0m'
 sh_url="https://raw.githubusercontent.com/DS587/tg_dicebot/master/main.py"
-Abstract="..........Dice! Telegram 一键部署脚本 by DS ..........
+Abstract="..........Dice! on Telegram 一键部署脚本 by DS ..........
 
 项目地址: https://github.com/DS587/tg_dicebot
 
