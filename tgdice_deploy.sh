@@ -41,7 +41,7 @@ echo -e "\n$red 输入错误！$none\n"
 }
 
 install() {
-    if [[ -d python && $(python -V | sed 's/Python//') < 3.6 ]] && [[ -d python3 && $(python3 -V | sed 's/Python//') < 3.6 ]]; then
+    if [[ $(command -v python) && $(python -V | sed 's/Python//') < 3.6 ]] && [[ $(command -v python) && $(python3 -V | sed 's/Python//') < 3.6 ]]; then
         echo "Python 版本<3.6，不符合部署条件"
         read -p "$(echo -e "是否更新Python版本？ [${magenta}y/n$none]")" choose_py37
         case $choose_py37 in
