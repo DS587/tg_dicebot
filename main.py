@@ -60,7 +60,13 @@ def roll(update, context):
     if time == '0' or dice == '0':
         text_number = "`非法输入给爷死`"
     else:
-        num_list = random.choices(range(int(dice)), k=int(time))
+        i = 0
+        num_list = []
+        while i < int(time):
+            num = random.randint(1,int(dice))
+            num_list.append(num)
+            i += 1
+
         num_list_new = [str(x) for x in num_list]
 
         # 修整输出
