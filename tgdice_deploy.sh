@@ -83,7 +83,8 @@ install() {
         echo '[TELEGRAM]' >> config.ini
         echo 'ACCESS_TOKEN = '$token >> config.ini
         wget $sh_url
-        pipenv install --three python-telegram-bot
+        # 安装 v13.x 最后一版
+        pipenv install python-telegram-bot==13.15
         _install_service
     fi
 }
